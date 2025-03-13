@@ -14,7 +14,7 @@ function runSnippet(name, args = {}) {
 }
 
 // Update this function call manually to test different snippets
-runSnippet("greetUser", { name: "Athaher", age: 33 });
+runSnippet("greetUser", { name: "Athaher", age: 30 });
 // runSnippet("nestedSnippet");
 
 module.exports = runSnippet;
