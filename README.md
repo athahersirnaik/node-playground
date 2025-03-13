@@ -15,7 +15,7 @@ The project is organized as follows:
 
 ```
 node-playground/
-├── snippets/             # Individual snippet modules
+├── snippets/             # Individual snippet module examples
 │   ├── helloWorld.js
 │   ├── mathOperation.js
 │   ├── greetUser.js
@@ -55,29 +55,23 @@ node-playground/
 
 ### Running a Snippet
 
-To execute a specific snippet:
+You can run a snippet using the following commands:
 
-1. \*\*Modify \*\*\`\`:
+- **Run in development mode** (with auto-restart on file changes):
+  ```bash
+  npm run dev
+  ```
 
-   In `src/runSnippet.js`, update the function call to the desired snippet. For example, to run `greetUser`:
+- **Run tests**:
+  ```bash
+  npm test
+  ```
 
-   ```javascript
-   runSnippet("greetUser", { name: "Athaher", age: 30 });
-   ```
+To execute a specific snippet, update `src/runSnippet.js` with the desired function call and run the script:
 
-2. **Execute the Script**:
-
-   ```bash
-   node src/runSnippet.js
-   ```
-
-   **Output**:
-
-   ```
-   Hello, Athaher!
-   You are 33 years old.
-   Hello, World!
-   ```
+```javascript
+runSnippet("greetUser", { name: "Athaher", age: 33 });
+```
 
 ### Adding a New Snippet
 

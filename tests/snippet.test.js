@@ -2,7 +2,7 @@ const runSnippet = require("../src/runSnippet");
 
 test("Should execute a snippet that calls another snippet", () => {
   console.log = jest.fn();
-  runSnippet("greetUser", "Alice");
+  runSnippet("greetUser", {name: "Alice"});
 
   expect(console.log).toHaveBeenCalledWith("Hello, Alice!");
   expect(console.log).toHaveBeenCalledWith("Hello, World!");
